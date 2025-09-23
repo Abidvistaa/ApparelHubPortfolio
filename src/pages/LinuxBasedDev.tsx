@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./LinuxBasedDev.css";
 const LinuxBasedDev: React.FC = () => {
   return (
-    <div style={{ padding: "5px" }}>
-      <h1>Welcome to ApparelHub Portfolio</h1>
-      <p>This is the AboutUs.</p>
+    <div className="linux-container" style={{ padding: "5px" }}>
+      <h1>Linux Development</h1>
+      <p>This is the LinuxBasedDev.</p>
     </div>
   );
 };
