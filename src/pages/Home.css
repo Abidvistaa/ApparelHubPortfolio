@@ -1,0 +1,9 @@
+.home-container {
+  display: flex;               /* enable flexbox */
+  flex-direction: column;      /* stack items vertically */
+  justify-content: center;     /* center vertically */
+  align-items: center;         /* center horizontally */
+  height: 100%;                /* full height of the parent section */
+  text-align: center;          /* center text */
+  padding: 20px;               /* optional padding */
+}

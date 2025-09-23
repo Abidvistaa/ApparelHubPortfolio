@@ -1,0 +1,73 @@
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+/* Menu items */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 12px;
+  color: white;
+}
+/* Change background color on hover for main menu items */
+.nav-menu li:hover {
+  background-color: #555; 
+  border-radius: 5px; 
+}
+
+/* Dropdown styling */
+.dropdown-parent:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 8px 0;
+  border-radius: 5px;
+  min-width: 200px;
+}
+
+.dropdown li {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.dropdown li:hover {
+  background-color: #555;
+}
+
+/* Optional: remove underline */
+.nav-menu li span,
+.nav-menu li {
+  text-decoration: none;
+}
+
+/* Smooth hover experience */
+.nav-menu li span {
+  display: inline-block;
+}
