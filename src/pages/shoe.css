@@ -1,4 +1,4 @@
-.windows-container {
+.shoe-container {
   display: flex;               /* enable flexbox */
   flex-direction: column;      /* stack items vertically */
   justify-content: center;     /* center vertically */

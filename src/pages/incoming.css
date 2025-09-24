@@ -1,0 +1,93 @@
+.incoming-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.error {
+  color: red;
+}
+
+.incoming-table {
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.incoming-table th, .incoming-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.incoming-table thead {
+  background-color: #a351b8;
+  color: #fff;
+  font-weight: bold;
+}
+
+.incoming-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.incoming-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.incoming-table tbody tr:hover {
+  background-color: #f1f1ff;
+}
+
+#category {
+  color: #a351b8;
+  font-weight: bold;
+}
+
+.product-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* Pagination */
+#pagination {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#pagination button {
+  padding: 6px 12px;
+  border: none;
+  background-color: hsla(175, 71%, 27%, 0.733);;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#pagination button:hover:not(:disabled) {
+  background-color: #5a52d4;
+}
+
+#pagination span {
+  font-weight: bold;
+  color: #333;
+}
