@@ -1,9 +1,149 @@
-.home-container {
-  display: flex;               
-  flex-direction: column;     
-  justify-content: center;     
-  align-items: center;         
-  height: 100%;               
-  text-align: center;          
-  padding: 20px;              
+.home-background{
+  position: relative;
+  margin-top: 65px;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+
+  /* Gradient background */
+  background: linear-gradient(135deg, #764e7e, #4e5f7e, #94545f, #3f804f); /* Example blue gradient */
+  background-size: 400% 400%;  /* make the gradient larger than container for animation */
+  animation: gradientShift 8s ease infinite; /* animation name, duration, easing, repeat */
 }
+
+/* the title */
+.header-title {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* the title */
+.header-title {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+.highlight-purple {
+  color: purple;
+  font-weight: bold; 
+    animation: pulsePurple 1.5s ease-in-out infinite alternate;
+}
+
+.highlight-green {
+  color: green;
+  font-weight: bold; /* optional */
+}
+
+.belowBanner-section {
+  display: flex;
+  align-items: stretch;  /* <— NEW: columns equal height */
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.belowBanner-text {
+  flex: 3;
+  font-style: oblique;
+  font-size: 18px;
+}
+
+.belowBanner-text h2 {
+  margin-bottom: 20px;
+}
+
+.belowBanner-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.belowBanner-image {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.belowBanner-image img {
+
+  border: 2px solid #ddd;        /* light gray border */
+  border-radius: 8px;            /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* soft shadow */
+
+}
+
+.text-image-section {
+  display: flex;
+  gap: 40px;
+  padding: 0px 20px 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.text-image-left {
+  flex: 1;
+  padding-top: 25px;
+}
+
+.text-image-left img {
+
+  border: 2px solid #ddd;        /* light gray border */
+  border-radius: 8px;            /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* soft shadow */
+}
+
+.text-image-right {
+  flex: 3;
+  font-style: oblique;
+  font-size: 18px;
+}
+
+.text-image-right h2 {
+  margin-bottom: 20px;
+}
+
+.text-image-right p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* highlight numbers */
+.highlight-green {
+  color: green;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Keyframes for gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
