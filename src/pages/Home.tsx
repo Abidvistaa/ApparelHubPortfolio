@@ -2,18 +2,23 @@ import React from "react";
 import "./home.css";
 import homeright from "../images/home-right.jpg"; 
 import homeleft from "../images/home-left.jpg"; 
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const Home: React.FC = () => {
+
+  useScrollAnimation("slide-left");
+  useScrollAnimation("slide-right");
+
   return (
     <>
 <div className="home-background">
   {/* Removed the <img> */}
-  <h1 className="header-title">Who we are?</h1>
+  <h1 className="header-title">APPAREL HUB</h1>
 </div>
 
 <div className="belowBanner-section">
-  <div className="belowBanner-text">
-    <h2><span className="highlight-purple">Apparel Hub</span></h2>
+  <div className="belowBanner-text slide-left">
+    <h2><span className="highlight-purple">Who we are?</span></h2>
     <h3>Over <span className="highlight-green">40</span> years of experience in the used American clothing market.</h3>
     <p>
       We are committed to contributing to a better planet by recycling
@@ -38,14 +43,14 @@ const Home: React.FC = () => {
 </div>
 
 
-      <div className="text-image-section">
+  <div className="text-image-section ">
   {/* Left: Image */}
-  <div className="text-image-left">
+  <div className="text-image-left ">
        <img src={homeleft} alt="homeright" width="300" height="570" />
   </div>
 
   {/* Right: Text */}
-  <div className="text-image-right">
+  <div className="text-image-right slide-right ">
     <h2>We care for the environment</h2>
     <p>
       We help reduce textile waste around the world by recycling.
