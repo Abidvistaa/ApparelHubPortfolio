@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import ScrollUpButton from "./components/ScrollUpButton";
 import "./App.css";
 import Home from "./pages/Home";
@@ -26,6 +27,7 @@ const App: React.FC = () => {
       <section id="contact" className="section"><Contact/> </section>
 
       <ScrollUpButton/>
+      <Footer/>
 
     </>
   );
