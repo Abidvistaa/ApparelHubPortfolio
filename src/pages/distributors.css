@@ -1,9 +1,54 @@
 .distributors-container {
-  display: flex;               
-  flex-direction: column;     
-  justify-content: center;     
-  align-items: center;        
-  height: 100%;               
-  text-align: center;       
-  padding: 20px;             
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .distributors-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .distributors-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;           /* allow items to go to the next row */
+  justify-content: center;   
+  gap: 20px;                 /* spacing between cards */
+margin-top: 55x;
 }
+
+
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 400px; 
+max-width: 400px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .card p {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+  }
+
