@@ -19,7 +19,7 @@ const Contacts: React.FC = () => {
       <div className="contact-right">
         <div className="contact-info">
           <h3>Our Office</h3>
-          <p>123 Green Road, Dhaka, Bangladesh</p>
+          <p>123 Parris Road, Jessore, Bangladesh</p>
           <p>Email: support@example.com</p>
           <p>Phone: +880 1234 567890</p>
         </div>
